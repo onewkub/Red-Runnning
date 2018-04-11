@@ -17,6 +17,10 @@ public class player_controller : MonoBehaviour {
 	void Update () {
 		am.SetBool ("isruning", true);
 		rb.velocity = new Vector2 (speed, rb.velocity.y);
-		
+		if (Input.GetButtonDown("Jump")) {
+			rb.velocity = new Vector2 (rb.velocity.x, 5f);
+			
+		}
+
 	}
 }
