@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 421}
   m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 143
+  controlID: 11
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -351,8 +351,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 502e0000
-    m_LastClickedID: 11856
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: 9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
     width: 352
     height: 937
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 137.95508}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -160
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
