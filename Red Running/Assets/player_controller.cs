@@ -6,7 +6,7 @@ public class player_controller : MonoBehaviour {
 	Rigidbody2D rb;
 	Animator am;
 	int n;
-	public float speed;
+	public float speed,jumpforce;
 	private float topAngle;
 	private float sideAngle;
 
@@ -24,7 +24,7 @@ public class player_controller : MonoBehaviour {
 		if (Input.GetButtonDown("Jump") && n <= 1) {
 			am.SetBool ("isruning", false);
 			am.SetBool ("isjumping_up", true);
-			rb.velocity = new Vector2 (rb.velocity.x, 5f);
+			rb.velocity = new Vector2 (rb.velocity.x, jumpforce);
 			n ++;
 		}
 		if (rb.velocity.y < -1.8f) {
