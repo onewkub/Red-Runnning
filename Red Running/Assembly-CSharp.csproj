@@ -51,15 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\controller_menu.cs" />
-     <Compile Include="Assets\MainMenu.cs" />
-     <Compile Include="Assets\movingBg.cs" />
-     <Compile Include="Assets\movingfloor.cs" />
-     <Compile Include="Assets\RetryMenu.cs" />
      <Compile Include="Assets\Script\bgfollow.cs" />
      <Compile Include="Assets\Script\camerafollow.cs" />
+     <Compile Include="Assets\Script\controller_menu.cs" />
+     <Compile Include="Assets\Script\MainMenu.cs" />
+     <Compile Include="Assets\Script\movingBg.cs" />
+     <Compile Include="Assets\Script\movingfloor.cs" />
      <Compile Include="Assets\Script\PauseMenu.cs" />
      <Compile Include="Assets\Script\player_controller.cs" />
+     <Compile Include="Assets\Script\RetryMenu.cs" />
      <Compile Include="Assets\Script\ScoreText.cs" />
      <Compile Include="Assets\Script\timer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
