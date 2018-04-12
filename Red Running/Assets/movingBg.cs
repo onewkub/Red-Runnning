@@ -10,12 +10,14 @@ public class movingBg : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		bgPositionX = transform.position.x;
-		bg1PositionX = GameObject.Find ("bg_1").transform.position.x;
+		bg1PositionX =GameObject.Find("bg_1").transform.position.x;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		transform.position = new Vector3 (transform.position.x + bgSpeed, transform.position.y, transform.position.z);
-		
+		if (transform.position.x < (bg1PositionX * -1f)) {
+			transform.position = new Vector3 (bg1PositionX, transform.position.y, transform.position.z);
+		}
 	}
 }
