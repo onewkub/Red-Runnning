@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class camerafollow : MonoBehaviour {
-	public Transform obj;
+	Transform obj;
 	// Use this for initialization
 	void Start () {
-		
+		obj = GameObject.Find ("player").transform;
 	}
 	
 	// Update is called once per frame

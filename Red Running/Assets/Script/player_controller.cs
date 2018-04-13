@@ -5,16 +5,18 @@ using UnityEngine.UI;
 
 public class player_controller : MonoBehaviour {
 	public Text speedCounter;
-	bool died;
+	public static bool died;
 	public GameObject DiedMenu;
 	float speedCount;
 	Rigidbody2D rb;
 	Animator am;
 	int n;
 	public float speed,jumpforce;
+	public static float coin;
 
 	// Use this for initialization
 	void Start () {
+		coin = 0;
 		Time.timeScale = 1f;
 		died = false;
 		rb = GetComponent<Rigidbody2D> ();
@@ -25,13 +27,14 @@ public class player_controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log (died);
+		rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
+		speedCount = rb.velocity.x;
+		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
 		if (died) {
 			Died ();
 		}
-		rb.velocity = new Vector2 (speed, rb.velocity.y);
-		speedCount = rb.velocity.x;
-		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
-		if (transform.position.y < -5.5f) {
+		if (transform.position.y < -5.5f && !died) {
 			died = true;
 			//Debug.Log("Died");
 		}
@@ -46,10 +49,8 @@ public class player_controller : MonoBehaviour {
 		if (rb.velocity.y < -1.8f) {
 			am.SetBool ("isjumping_up", false);
 			am.SetBool ("isjumping_down", true);
-			//Debug.Log("down");
 		}
-
-	}
+		}
 	void OnCollisionEnter2D(Collision2D coll) {
 		am.SetBool ("isjumping_down", false);
 		am.SetBool ("isruning", true);
@@ -59,8 +60,8 @@ public class player_controller : MonoBehaviour {
 	public void Died()
 	{
 		Time.timeScale = 0f;
-		died = false;
 		DiedMenu.SetActive (true);
+		Debug.Log (ScoreText.score);
 
 	}
 }

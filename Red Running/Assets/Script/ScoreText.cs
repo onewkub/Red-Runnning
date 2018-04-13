@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour {
 	public Text Score;
-	float x,score;
-	public GameObject obj;
+	float x;
+	public static float score;
+	GameObject obj;
 	// Use this for initialization
 	void Start () {
+		obj = GameObject.Find ("player");
 		score = 0;
 		
 	}

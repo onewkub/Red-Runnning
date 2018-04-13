@@ -47,6 +47,9 @@ TagManager:
   - name: floor
     uniqueID: 2278814293
     locked: 0
+  - name: item
+    uniqueID: 2017438495
+    locked: 0
   - name: player
     uniqueID: 2554277671
     locked: 0
