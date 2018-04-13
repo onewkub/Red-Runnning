@@ -11,7 +11,6 @@ It's is a red monster. Also it cute. Hahahaha Nice!!
   - [Free Platform Game Assets](https://assetstore.unity.com/packages/2d/environments/free-platform-game-assets-85838)
   <div align="center"><img src="https://d2ujflorbtfzji.cloudfront.net/key-image/acef87bc-77a2-4842-9998-09a258259272.jpg" width="516" height="389"></div>
   - [TextMesh Pro](https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126)
-    <div align="center"><img src="https://d2ujflorbtfzji.cloudfront.net/key-image/894b303e-ce0a-4ce1-9e33-8ca7ecf24414.jpg" width="516" height="389"></div>
 - Sound : other  
 
 
