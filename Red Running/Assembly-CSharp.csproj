@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FixBlock.cs" />
+     <Compile Include="Assets\Mace_Sc.cs" />
      <Compile Include="Assets\Script\bgfollow.cs" />
      <Compile Include="Assets\Script\camerafollow.cs" />
      <Compile Include="Assets\Script\controller_menu.cs" />
