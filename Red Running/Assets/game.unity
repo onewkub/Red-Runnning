@@ -2506,7 +2506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 927b14155504bb348aa27ec3416f8803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 703051145}
 --- !u!114 &703051145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8680,7 +8679,7 @@ Prefab:
     - target: {fileID: 114285082665634042, guid: c9baf801a7243714c82aa93d3447a6a4,
         type: 2}
       propertyPath: speed
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 212932401864584030, guid: c9baf801a7243714c82aa93d3447a6a4,
         type: 2}
