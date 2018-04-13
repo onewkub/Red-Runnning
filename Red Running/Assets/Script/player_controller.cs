@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class player_controller : MonoBehaviour {
 	public Text speedCounter;
+	public Text HighScore;
 	public static bool died;
 	public GameObject DiedMenu;
 	float speedCount;
@@ -16,6 +17,7 @@ public class player_controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		HighScore.text = "HIGH SCORE: "+PlayerPrefs.GetFloat ("HighScore", 0f).ToString ("f0");
 		coin = 0;
 		Time.timeScale = 1f;
 		died = false;
@@ -62,6 +64,10 @@ public class player_controller : MonoBehaviour {
 		Time.timeScale = 0f;
 		DiedMenu.SetActive (true);
 		Debug.Log (ScoreText.score);
+		if (ScoreText.score > PlayerPrefs.GetFloat ("HighScore", 0f)) {
+			PlayerPrefs.SetFloat ("HighScore", ScoreText.score);
+			HighScore.text = "HIGH SCORE: " + ScoreText.score.ToString ("f0");
 
+		}
 	}
 }
