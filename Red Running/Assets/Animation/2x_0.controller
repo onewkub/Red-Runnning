@@ -163,6 +163,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+<<<<<<< HEAD:Red Running/Assets/Animation/2x_0.controller
 <<<<<<< HEAD:Red Running/Assets/BayatGames/Free Platform Game Assets/Character Animation/Idle/Blink/2x_0.controller
 --- !u!1102 &1102829523777088682
 AnimatorState:
@@ -190,6 +191,8 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+=======
+>>>>>>> master:Red Running/Assets/Animation/2x_0.controller
 =======
 >>>>>>> master:Red Running/Assets/Animation/2x_0.controller
 --- !u!1102 &1102871656880192404
