@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\AudioClick.cs" />
+     <Compile Include="Assets\Script\audioController.cs" />
      <Compile Include="Assets\Script\bgfollow.cs" />
      <Compile Include="Assets\Script\camerafollow.cs" />
      <Compile Include="Assets\Script\coin.cs" />

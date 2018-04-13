@@ -8,10 +8,10 @@ public class RetryMenu : MonoBehaviour {
 	// Use this for initialization
 	public void Retry(){
 		SceneManager.LoadScene("game");
-		Debug.Log ("Retry");
+		//Debug.Log ("Retry");
 	}
 	public void LoadMenu(){
 		SceneManager.LoadScene("menu");
-		Debug.Log ("Load Menu");
+		//Debug.Log ("Load Menu");
 	}
 }
