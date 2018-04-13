@@ -11,4 +11,8 @@ public class saw : MonoBehaviour {
 		transform.Rotate (0, 0, 5);
 		
 	}
+	void OnCollisionEnter2D(Collision2D coll) {
+		Collider2D collider = coll.collider;
+		Debug.Log (collider.name);
+	}
 }

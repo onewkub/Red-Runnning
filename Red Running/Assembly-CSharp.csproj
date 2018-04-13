@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\saw.cs" />
      <Compile Include="Assets\Script\bgfollow.cs" />
      <Compile Include="Assets\Script\camerafollow.cs" />
      <Compile Include="Assets\Script\controller_menu.cs" />
@@ -63,6 +62,7 @@
      <Compile Include="Assets\Script\PauseMenu.cs" />
      <Compile Include="Assets\Script\player_controller.cs" />
      <Compile Include="Assets\Script\RetryMenu.cs" />
+     <Compile Include="Assets\Script\saw.cs" />
      <Compile Include="Assets\Script\ScoreText.cs" />
      <Compile Include="Assets\Script\timer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
