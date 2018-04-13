@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Saw : MonoBehaviour {
-	public GameObject DiedMenu;
+public class saw : MonoBehaviour {
 
 	// Use this for initialization
 	void Start(){

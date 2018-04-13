@@ -5,7 +5,6 @@ using UnityEngine;
 public class Mace_Sc : MonoBehaviour {
 	public float speed;
 	Rigidbody2D rb;
-	public GameObject DiedMenu;
 
 	// Use this for initialization
 	void Start () {
