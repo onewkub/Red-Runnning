@@ -8,8 +8,10 @@ public class PauseMenu : MonoBehaviour {
 	public GameObject pauseMenuUI;
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Escape))
+		//Debug.Log (player_controller.died);
+		if (Input.GetKeyDown (KeyCode.Escape) && player_controller.died == false)
 		{
+			//Debug.Log (player_controller.died);
 			if (GameIsPaused) {
 				Resume ();
 			} else {

@@ -18,5 +18,8 @@ public class MainMenu : MonoBehaviour {
 	public void Opteion(){
 		Debug.Log ("option");
 	}
+	public void Reset(){
+		PlayerPrefs.DeleteAll ();
+	}
 
 }
