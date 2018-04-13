@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ScoreText.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Mace_Sc.cs">
     <Files>
-      <File FileName="Assets\Script\PauseMenu.cs" Line="40" Column="26" />
-      <File FileName="Assets\RetryMenu.cs" Line="12" Column="25" />
-      <File FileName="Assets\Script\player_controller.cs" Line="18" Column="21" />
+      <File FileName="Assets\Script\PauseMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\player_controller.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\ScoreText.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\camerafollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mace_Sc.cs" Line="17" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
