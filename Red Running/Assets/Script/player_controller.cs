@@ -14,6 +14,7 @@ public class player_controller : MonoBehaviour {
 	int n;
 	public float speed,jumpforce;
 	public static float coin;
+	AudioSource asource;
 
 	// Use this for initialization
 	void Start () {
@@ -25,11 +26,13 @@ public class player_controller : MonoBehaviour {
 		am = GetComponent<Animator> ();
 		am.SetBool ("isruning", true);
 		n = 0;
+		asource = GetComponent<AudioSource> ();
+		asource.volume *= audioController.value;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (died);
 		rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
 		speedCount = rb.velocity.x;
 		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
@@ -41,17 +44,19 @@ public class player_controller : MonoBehaviour {
 			//Debug.Log("Died");
 		}
 		if(!died){
-		if (Input.GetButtonDown("Jump") && n <= 1) {
-			am.SetBool ("isruning", false);
-			am.SetBool ("isjumping_up", true);
-			rb.velocity = new Vector2 (rb.velocity.x, jumpforce);
-			n ++;
+			if (Input.GetButtonDown("Jump") && n <= 1) {
+				asource.Play ();
+				am.SetBool ("isjumping_up", true);
+				am.SetBool ("isruning", false);
+				//Debug.Log ("Jump!!");
+				rb.velocity = new Vector2 (rb.velocity.x, jumpforce);
+				n ++;
 			}
 		}
 		if (rb.velocity.y < -1.8f) {
 			am.SetBool ("isjumping_up", false);
 			am.SetBool ("isjumping_down", true);
-		}
+			}
 		}
 	void OnCollisionEnter2D(Collision2D coll) {
 		am.SetBool ("isjumping_down", false);
@@ -63,7 +68,7 @@ public class player_controller : MonoBehaviour {
 	{
 		Time.timeScale = 0f;
 		DiedMenu.SetActive (true);
-		Debug.Log (ScoreText.score);
+		//Debug.Log (ScoreText.score);
 		if (ScoreText.score > PlayerPrefs.GetFloat ("HighScore", 0f)) {
 			PlayerPrefs.SetFloat ("HighScore", ScoreText.score);
 			HighScore.text = "HIGH SCORE: " + ScoreText.score.ToString ("f0");
