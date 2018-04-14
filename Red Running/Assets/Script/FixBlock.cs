@@ -12,7 +12,7 @@ public class FixBlock : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D coll) {
 		Collider2D collider = coll.collider;
-		Debug.Log (collider.name);
+		//Debug.Log (collider.name);
 		if (collider.name == "player") {
 			rb.velocity = new Vector2 (rb.velocity.x, -25f);
 		
