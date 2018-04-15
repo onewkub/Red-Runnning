@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StuckBlock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\bgfollow.cs">
     <Files>
-      <File FileName="Assets\Script\player_controller.cs" Line="46" Column="4" />
-      <File FileName="Assets\StuckBlock.cs" Line="27" Column="43" />
+      <File FileName="Assets\bgChange.cs" Line="19" Column="20" />
+      <File FileName="Assets\Script\bgfollow.cs" Line="24" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
