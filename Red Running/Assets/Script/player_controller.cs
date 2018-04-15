@@ -35,12 +35,13 @@ public class player_controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
+		
 		if (!isStuck) {
+			rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
 			//Debug.Log ("not stuck");
 			speedCount = rb.velocity.x;
 		} else {
-			rb.velocity = new Vector2 (1f, rb.velocity.y);
+			rb.velocity = new Vector2 (0f, rb.velocity.y);
 			//Debug.Log ("stuck");
 		}
 		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
