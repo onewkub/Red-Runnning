@@ -40,9 +40,10 @@ public class player_controller : MonoBehaviour {
 			rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
 			//Debug.Log ("not stuck");
 			speedCount = rb.velocity.x;
-		} else {
+		} 
+		if(isStuck){
 			rb.velocity = new Vector2 (0f, rb.velocity.y);
-			//Debug.Log ("stuck");
+			Debug.Log ("stuck");
 		}
 		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
 		if (died) {
