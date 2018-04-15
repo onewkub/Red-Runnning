@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/scene_sky.unity
-=======
-- path: D:/Project_Group_10-MuMi2/Project_Group_10-MuMi2/Red Running/Assets/game.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1
