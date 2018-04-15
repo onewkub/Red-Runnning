@@ -16,10 +16,15 @@
 =======
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StuckBlock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\player_controller.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Script\player_controller.cs" Line="44" Column="6" />
       <File FileName="Assets\StuckBlock.cs" Line="19" Column="18" />
+>>>>>>> master
+=======
+      <File FileName="Assets\Script\player_controller.cs" Line="40" Column="58" />
+      <File FileName="Assets\StuckBlock.cs" Line="28" Column="27" />
 >>>>>>> master
     </Files>
   </MonoDevelop.Ide.Workbench>
