@@ -14,6 +14,7 @@ public class player_controller : MonoBehaviour {
 	int n;
 	public float speed,jumpforce;
 	public static float coin;
+	public static bool isStuck;
 	AudioSource asource;
 
 	// Use this for initialization
@@ -28,13 +29,22 @@ public class player_controller : MonoBehaviour {
 		n = 0;
 		asource = GetComponent<AudioSource> ();
 		asource.volume *= audioController.value;
+		isStuck = false;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
-		speedCount = rb.velocity.x;
+		
+		if (!isStuck) {
+			rb.velocity = new Vector2 (speed+coin, rb.velocity.y);
+			//Debug.Log ("not stuck");
+			speedCount = rb.velocity.x;
+		} 
+		if(isStuck){
+			rb.velocity = new Vector2 (0f, rb.velocity.y);
+			//Debug.Log ("stuck");
+		}
 		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
 		if (died) {
 			Died ();
