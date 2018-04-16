@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/scene_sky.unity
-=======
-- path: Assets/game.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1
