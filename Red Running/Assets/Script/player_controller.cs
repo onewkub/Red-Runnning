@@ -43,7 +43,7 @@ public class player_controller : MonoBehaviour {
 		} 
 		if(isStuck){
 			rb.velocity = new Vector2 (0f, rb.velocity.y);
-			Debug.Log ("stuck");
+			//Debug.Log ("stuck");
 		}
 		speedCounter.text = "SPEED x " + (speedCount/5).ToString("f1");
 		if (died) {
