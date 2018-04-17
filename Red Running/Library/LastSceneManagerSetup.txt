@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/scene_sky.unity
-=======
-- path: Assets/game_PP.unity
->>>>>>> PP_new
+- path: Assets/game_O.unity
   isLoaded: 1
   isActive: 1
