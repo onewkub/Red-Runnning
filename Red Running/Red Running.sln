@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio 15
+=======
+# Visual Studio 2017
+>>>>>>> PP_new
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red Running", "Red Running.csproj", "{43197397-F6C1-E6B1-E5B2-5063F85969E1}"
 EndProject
 Global
