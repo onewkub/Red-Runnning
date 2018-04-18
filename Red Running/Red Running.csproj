@@ -243,6 +243,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\AudioClick.cs" />
     <Compile Include="Assets\Script\audioController.cs" />
+    <Compile Include="Assets\Script\bgChange.cs" />
     <Compile Include="Assets\Script\bgfollow.cs" />
     <Compile Include="Assets\Script\camerafollow.cs" />
     <Compile Include="Assets\Script\coin.cs" />
@@ -259,6 +260,7 @@
     <Compile Include="Assets\Script\RetryMenu.cs" />
     <Compile Include="Assets\Script\saw.cs" />
     <Compile Include="Assets\Script\ScoreText.cs" />
+    <Compile Include="Assets\Script\StuckBlock.cs" />
     <Compile Include="Assets\Script\timer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
