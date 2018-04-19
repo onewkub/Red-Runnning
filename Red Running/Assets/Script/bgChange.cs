@@ -15,7 +15,9 @@ public class bgChange : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		//Debug.Log ("Hit");
-		bgfollow.pass = true;
-		BlockName = name;
+		if (other.name == "player") {
+			bgfollow.pass = true;
+			BlockName = name;
+		}
 	}
 }
