@@ -54,13 +54,13 @@ public class player_controller : MonoBehaviour {
 			//Debug.Log("Died");
 		}
 		if(!died){
-			if (Input.GetButtonDown("Jump") && n <= 1) {
+			if (Input.GetButtonDown("Jump") && n < 2) {
+				n ++;
 				asource.Play ();
 				am.SetBool ("isjumping_up", true);
 				am.SetBool ("isruning", false);
 				//Debug.Log ("Jump!!");
 				rb.velocity = new Vector2 (rb.velocity.x, jumpforce);
-				n ++;
 			}
 		}
 		if (rb.velocity.y < -1.8f) {
