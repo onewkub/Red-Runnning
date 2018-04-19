@@ -18,7 +18,7 @@ It's is a red monster. Also it cute. Hahahaha Nice!!
   - [On menu Sound](https://audiojungle.net/item/funny-jazz/21078335?ref=AudioAgent)
 
 - Poster
-  <div align = "center"><img src= "Project_Group_10/poster-01.jpg"></div>
+  <div align="center"><img src="poster-01.jpg" width="1754" height="2483"></div>
 ## Contributors
 Onewkub Blackguilder
 
