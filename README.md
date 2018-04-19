@@ -16,6 +16,9 @@ It's is a red monster. Also it cute. Hahahaha Nice!!
 - Sound 
   - [In game sound](https://audiojungle.net/item/this-is-funny/20181816?ref=audioagent) 
   - [On menu Sound](https://audiojungle.net/item/funny-jazz/21078335?ref=AudioAgent)
+
+- Poster
+  <div align = "center"><img src= "Project_Group_10/poster-01.jpg"></div>
 ## Contributors
 Onewkub Blackguilder
 
