@@ -14,7 +14,7 @@ public class FixBlock : MonoBehaviour {
 		Collider2D collider = coll.collider;
 		//Debug.Log (collider.name);
 		if (collider.name == "player") {
-			rb.velocity = new Vector2 (rb.velocity.x, -25f);
+			rb.velocity = new Vector2 (0f, -25f);
 		
 		}
 	}

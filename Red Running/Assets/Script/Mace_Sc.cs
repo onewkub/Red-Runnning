@@ -14,7 +14,7 @@ public class Mace_Sc : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//transform.position = new Vector3 (transform.position.x + speed, transform.position.y, transform.position.z);
-		rb.velocity = new Vector2(speed, rb.velocity.y);
+		rb.velocity = new Vector2(speed+player_controller.coin, rb.velocity.y);
 		
 	}
 	public void OnTriggerEnter2D(Collider2D other){
