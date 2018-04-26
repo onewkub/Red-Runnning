@@ -19,7 +19,6 @@ It's is a red monster. Also it cute. Hahahaha Nice!!
 
 - Poster
   <div align="center"><img src="poster-01.jpg" width="701" height="993"></div>
-## Contributors
-Onewkub Blackguilder
+
 
 
